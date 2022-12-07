@@ -20,6 +20,11 @@ from PIL import Image
 # ANGGOTA TIM
 st.write('# KELOMPOK 1 DATA MINING SD|A2')
 
+# # DESCRIPTION
+st.markdown('<div style="text-align: justify; font-size:140%; text-indent: 4em;"> Web App Image Classification on Fashion dibuat untuk memenuhi Proyek Akhir Data Mining II kelas SD-A2. Adapun Anggota kelompok 1 adalah sebagai berikut: </div>',
+            unsafe_allow_html=True)
+# st.markdown('<div style="text-align: justify; font-size:160%; text-indent: 4em;"> Bata Baca merupakan kependekan dari Batik Kita Batik Cita. Web App ini merepresentasikan batik kita (Indonesia) yang memiliki fitur untuk mendeteksi motif batik suatu daerah di Indonesia. Dengan adanya Web App ini, kami punya harapan atau cita agar batik dapat lebih dikenal dan dilestarikan oleh masyarakat. </div>',
+
 
 col1, col2 = st.columns(2)
 col3, col4 = st.columns(2)
