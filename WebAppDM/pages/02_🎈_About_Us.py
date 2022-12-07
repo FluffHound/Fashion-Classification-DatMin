@@ -26,7 +26,7 @@ col3, col4 = st.columns(2)
 foto_hanif = Image.open('foto_hanif.jpeg').resize((400,400))
 foto_alya = Image.open('foto_alya2.jpeg').resize((400,400))
 foto_ergid = Image.open('ergid.png').resize((400,400))
-foto_hanif = Image.open('foto_alya2.jpeg').resize((400,400))
+foto_razin = Image.open('foto_razin.png').resize((400,400))
 
 # For columns 1 : Introduce Adam Maurizio Winata
 col1.write('### Muhammad Hanif Sudibyo')
