@@ -1,24 +1,25 @@
 import streamlit as st
 from PIL import Image
 
-# SET PAGE
-pageicon = Image.open(r"E:\1.Kuliah\3. Semester 5 TSD\3. Data Mining\UAS HM\batabaca\aset_batik_icon.png")
-st.set_page_config(page_title="Bata Baca Web App", page_icon=pageicon, layout="centered")
+# # SET PAGE
+# pageicon = Image.open(r"E:\1.Kuliah\3. Semester 5 TSD\3. Data Mining\UAS HM\batabaca\aset_batik_icon.png")
+# st.set_page_config(page_title="Bata Baca Web App", page_icon=pageicon, layout="centered")
 
-# SET TITLE AND LOGO IMAGE
-intro_col_left, intro_col_right = st.columns(2)
-intro_col_left.image('Bata Baca.png')
-intro_col_right.markdown('<div style="text-align: justify; font-size:250%"> <b>Web App Klasifikasi Gambar Motif Batik</b> </div>',
-            unsafe_allow_html=True)
+# # SET TITLE AND LOGO IMAGE
+# intro_col_left, intro_col_right = st.columns(2)
+# intro_col_left.image('Bata Baca.png')
+# intro_col_right.markdown('<div style="text-align: justify; font-size:250%"> <b>Web App Klasifikasi Gambar Motif Batik</b> </div>',
+#             unsafe_allow_html=True)
 
-# DESCRIPTION
-st.markdown('<div style="text-align: justify; font-size:160%; text-indent: 4em;"> Web App ini merupakan suatu aplikasi web di mana kita bisa mengklasifikasikan suatu gambar motif batik ke dalam suatu jenis batik tertentu. Tidak hanya itu, aplikasi web ini juga memiliki fitur infopedia yang diharapkan dapat menambah wawasan pengguna mengenai budaya batik yang ada di Indonesia. </div>',
-            unsafe_allow_html=True)
-st.markdown('<div style="text-align: justify; font-size:160%; text-indent: 4em;"> Bata Baca merupakan kependekan dari Batik Kita Batik Cita. Web App ini merepresentasikan batik kita (Indonesia) yang memiliki fitur untuk mendeteksi motif batik suatu daerah di Indonesia. Dengan adanya Web App ini, kami punya harapan atau cita agar batik dapat lebih dikenal dan dilestarikan oleh masyarakat. </div>',
-            unsafe_allow_html=True)
+# # DESCRIPTION
+# st.markdown('<div style="text-align: justify; font-size:160%; text-indent: 4em;"> Web App ini merupakan suatu aplikasi web di mana kita bisa mengklasifikasikan suatu gambar motif batik ke dalam suatu jenis batik tertentu. Tidak hanya itu, aplikasi web ini juga memiliki fitur infopedia yang diharapkan dapat menambah wawasan pengguna mengenai budaya batik yang ada di Indonesia. </div>',
+#             unsafe_allow_html=True)
+# st.markdown('<div style="text-align: justify; font-size:160%; text-indent: 4em;"> Bata Baca merupakan kependekan dari Batik Kita Batik Cita. Web App ini merepresentasikan batik kita (Indonesia) yang memiliki fitur untuk mendeteksi motif batik suatu daerah di Indonesia. Dengan adanya Web App ini, kami punya harapan atau cita agar batik dapat lebih dikenal dan dilestarikan oleh masyarakat. </div>',
+#             unsafe_allow_html=True)
 
 # ANGGOTA TIM
-st.write('## Anggota Tim :')
+st.write('# KELOMPOK 1 DATA MINING SD|A2')
+
 
 col1, col2 = st.columns(2)
 col3, col4 = st.columns(2)
