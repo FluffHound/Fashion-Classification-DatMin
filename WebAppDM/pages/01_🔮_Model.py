@@ -7,7 +7,7 @@ from PIL import Image
 
 # SET PAGE
 # emojis: https://www.webfx.com/tools/emoji-cheat-sheet/
-pageicon = Image.open("./assets/FashioniFy.png")
+pageicon = Image.open("./WebAppDM/assets/FashioniFy.png")
 st.set_page_config(page_title="Fashionify Web App", page_icon=pageicon, layout="centered")
 
 # SET TITLE

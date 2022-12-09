@@ -5,7 +5,7 @@ import plotly.express as px
 import pandas as pd
 
 # SET PAGE
-pageicon = Image.open("./assets/FashioniFy.png")
+pageicon = Image.open("./WebAppDM/assets/FashioniFy.png")
 st.set_page_config(page_title="Fashionify Web App", page_icon=pageicon, layout="centered")
 
 # MENAMPILKAN INFOPEDIA
@@ -17,7 +17,7 @@ st.set_page_config(page_title="Fashionify Web App", page_icon=pageicon, layout="
 # pageicon = Image.open("FashioniFy.png")
 # st.set_page_config(page_title="Bata Baca Web App", page_icon=pageicon, layout="centered")
 intro_col_left, intro_col_right = st.columns(2)
-intro_col_left.image('./assets/FashioniFy.png')
+intro_col_left.image('./WebAppDM/assets/FashioniFy.png')
 intro_col_right.markdown('<div style="text-align: center; font-size:300%"> <b>Web App Image Classification on Fashion</b> </div>',
             unsafe_allow_html=True)
 st.markdown('<hr>', unsafe_allow_html=True)
@@ -46,22 +46,22 @@ st.markdown(
 
 intro_col_left1, intro_col_right1, intro_col_left2, intro_col_right2 = st.columns(4)
 st.markdown('<hr>', unsafe_allow_html=True)
-intro_col_left1.image('./assets/bag.jpg', caption="Bags")
-intro_col_right1.image('./assets/belt.png', caption="Belt")
-intro_col_left2.image('./assets/Boots.png', caption="Boots")
-intro_col_right2.image('./assets/dress.png', caption="Dresses")
+intro_col_left1.image('./WebAppDM/assets/bag.jpg', caption="Bags")
+intro_col_right1.image('./WebAppDM/assets/belt.png', caption="Belt")
+intro_col_left2.image('./WebAppDM/assets/Boots.png', caption="Boots")
+intro_col_right2.image('./WebAppDM/assets/dress.png', caption="Dresses")
 
-intro_col_left1.image('./assets/topi.png', caption="Hats")
-intro_col_right1.image('./assets/jackets and coats.png', caption="Jackets and Coats")
-intro_col_left2.image('./assets/jewelry.png', caption="Jewelry")
-intro_col_right2.image('./assets/knitwear.png', caption="Knitwear")
+intro_col_left1.image('./WebAppDM/assets/topi.png', caption="Hats")
+intro_col_right1.image('./WebAppDM/assets/jackets and coats.png', caption="Jackets and Coats")
+intro_col_left2.image('./WebAppDM/assets/jewelry.png', caption="Jewelry")
+intro_col_right2.image('./WebAppDM/assets/knitwear.png', caption="Knitwear")
 
-intro_col_left1.image('./assets/loafers.png', caption="Loafers")
-intro_col_right1.image('./assets/pants.png', caption="Pants")
-intro_col_left2.image('./assets/sendals.png', caption="Sandals")
-intro_col_right2.image('./assets/scarves.png', caption="Scarves")
+intro_col_left1.image('./WebAppDM/assets/loafers.png', caption="Loafers")
+intro_col_right1.image('./WebAppDM/assets/pants.png', caption="Pants")
+intro_col_left2.image('./WebAppDM/assets/sendals.png', caption="Sandals")
+intro_col_right2.image('./WebAppDM/assets/scarves.png', caption="Scarves")
 
-intro_col_left1.image('./assets/skirt.png', caption="Skirt")
-intro_col_right1.image('./assets/sneakers.png', caption="Sneaker")
-intro_col_left2.image('./assets/sunglasses.png', caption="Sunglasses")
-intro_col_right2.image('./assets/T-shirt.png', caption="T-shirt")
+intro_col_left1.image('./WebAppDM/assets/skirt.png', caption="Skirt")
+intro_col_right1.image('./WebAppDM/assets/sneakers.png', caption="Sneaker")
+intro_col_left2.image('./WebAppDM/assets/sunglasses.png', caption="Sunglasses")
+intro_col_right2.image('./WebAppDM/assets/T-shirt.png', caption="T-shirt")

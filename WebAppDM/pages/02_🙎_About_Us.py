@@ -2,7 +2,7 @@ import streamlit as st
 from PIL import Image
 
 # # SET PAGE
-pageicon = Image.open("./assets/FashioniFy.png")
+pageicon = Image.open("./WebAppDM/assets/FashioniFy.png")
 st.set_page_config(page_title="Fashionify Web App", page_icon=pageicon, layout="centered")
 
 # # SET TITLE AND LOGO IMAGE
