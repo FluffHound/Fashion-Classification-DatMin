@@ -29,23 +29,27 @@ st.markdown('<div style="text-align: justify; font-size:140%; text-indent: 4em;"
 col1, col2 = st.columns(2)
 col3, col4 = st.columns(2)
 
-foto_hanif = Image.open('foto_hanif.jpeg').resize((400,400))
-foto_alya = Image.open('foto_alya2.jpeg').resize((400,400))
-foto_ergid = Image.open('ergid.png').resize((400,400))
-foto_razin = Image.open('foto_razin.png').resize((400,400))
+foto_hanif = Image.open('./assets/foto_hanif.jpeg').resize((400,400))
+foto_alya = Image.open('./assets/foto_alya2.jpeg').resize((400,400))
+foto_ergid = Image.open('./assets/ergid.png').resize((400,400))
+foto_razin = Image.open('./assets/foto_razin.png').resize((400,400))
 
-# For columns 1 : Introduce Adam Maurizio Winata
-col1.write('### Muhammad Hanif Sudibyo')
-col1.image(foto_hanif, caption = "Data Scientist")
+# For columns 1 : Introduce Muhammad Hanif Sudibyo
+with col1:
+    st.markdown('<div style="text-align: center; font-size:160%;"><b>Muhammad Hanif Sudibyo</div>', unsafe_allow_html=True)
+    st.image(foto_hanif, caption = "Data Scientist")
 
-# For columns 2 : Introduce Annaura Nabilla Masduki
-col2.write('### Najma Attaqiya Alya')
-col2.image(foto_alya, caption = "Data Scientist")
+# For columns 2 : Introduce Najma Attaqiya Alya
+with col2:
+    st.markdown('<div style="text-align: center; font-size:160%;"><b>Najma Attaqiya Alya</div>', unsafe_allow_html=True)
+    st.image(foto_alya, caption = "Data Scientist")
 
-# For columns 3 : Introduce Muhammad Hanif Sudibyo
-col3.write('### Ergidya Liviani')
-col3.image(foto_ergid, caption = "Data Scientist")
+# For columns 3 : Introduce Ergidya Liviani
+with col3:
+    st.markdown('<div style="text-align: center; font-size:160%;"><b>Ergidya Liviani</div>', unsafe_allow_html=True)
+    st.image(foto_ergid, caption = "Data Scientist")
 
-# For columns 4 : Introduce Najma Attaqiya Alya
-col4.write('### Razin Isyraq Thirafi')
-col4.image(foto_razin, caption = "Data Scientist")
+# For columns 4 : Introduce Razin Isyraq Thirafi
+with col4:
+    st.markdown('<div style="text-align: center; font-size:160%;"><b>Razin Isyraq Thirafi</div>', unsafe_allow_html=True)
+    st.image(foto_razin, caption = "Data Scientist")
