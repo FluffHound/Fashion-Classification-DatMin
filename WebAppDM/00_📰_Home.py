@@ -3,11 +3,10 @@ import streamlit as st
 from PIL import Image
 import plotly.express as px
 import pandas as pd
-import numpy as np
 
 # SET PAGE
-pageicon = Image.open("aset_batik_icon.png")
-st.set_page_config(page_title="Bata Baca Web App", page_icon=pageicon, layout="centered")
+pageicon = Image.open("./assets/FashioniFy.png")
+st.set_page_config(page_title="Fashionify Web App", page_icon=pageicon, layout="centered")
 
 # MENAMPILKAN INFOPEDIA
 #Judul 

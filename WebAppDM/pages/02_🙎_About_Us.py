@@ -2,8 +2,8 @@ import streamlit as st
 from PIL import Image
 
 # # SET PAGE
-# pageicon = Image.open(r"E:\1.Kuliah\3. Semester 5 TSD\3. Data Mining\UAS HM\batabaca\aset_batik_icon.png")
-# st.set_page_config(page_title="Bata Baca Web App", page_icon=pageicon, layout="centered")
+pageicon = Image.open("./assets/FashioniFy.png")
+st.set_page_config(page_title="Fashionify Web App", page_icon=pageicon, layout="centered")
 
 # # SET TITLE AND LOGO IMAGE
 # intro_col_left, intro_col_right = st.columns(2)
@@ -18,10 +18,11 @@ from PIL import Image
 #             unsafe_allow_html=True)
 
 # ANGGOTA TIM
-st.write('# KELOMPOK 1 DATA MINING SD|A2')
+st.markdown('<div style="text-align: center; font-size:220%;"><b>KELOMPOK 1 DATA MINING SD|A2</div>',
+            unsafe_allow_html=True)
 
 # # DESCRIPTION
-st.markdown('<div style="text-align: justify; font-size:140%; text-indent: 4em;"> Web App Image Classification on Fashion dibuat untuk memenuhi Proyek Akhir Data Mining II kelas SD-A2. Adapun Anggota kelompok 1 adalah sebagai berikut: </div>',
+st.markdown('<div style="text-align: justify; font-size:120%; text-indent: 4em;"> Web App Image Classification on Fashion dibuat untuk memenuhi Proyek Akhir Data Mining II kelas SD-A2. Adapun Anggota kelompok 1 adalah sebagai berikut: <br><br></div>',
             unsafe_allow_html=True)
 # st.markdown('<div style="text-align: justify; font-size:160%; text-indent: 4em;"> Bata Baca merupakan kependekan dari Batik Kita Batik Cita. Web App ini merepresentasikan batik kita (Indonesia) yang memiliki fitur untuk mendeteksi motif batik suatu daerah di Indonesia. Dengan adanya Web App ini, kami punya harapan atau cita agar batik dapat lebih dikenal dan dilestarikan oleh masyarakat. </div>',
 
@@ -29,10 +30,10 @@ st.markdown('<div style="text-align: justify; font-size:140%; text-indent: 4em;"
 col1, col2 = st.columns(2)
 col3, col4 = st.columns(2)
 
-foto_hanif = Image.open('./assets/foto_hanif.jpeg').resize((400,400))
-foto_alya = Image.open('./assets/foto_alya2.jpeg').resize((400,400))
-foto_ergid = Image.open('./assets/ergid.png').resize((400,400))
-foto_razin = Image.open('./assets/foto_razin.png').resize((400,400))
+foto_hanif = Image.open('./WebAppDM/assets/foto_hanif.jpeg').resize((400,400))
+foto_alya = Image.open('./WebAppDM/assets/foto_alya2.jpeg').resize((400,400))
+foto_ergid = Image.open('./WebAppDM/assets/ergid.png').resize((400,400))
+foto_razin = Image.open('./WebAppDM/assets/foto_razin.png').resize((400,400))
 
 # For columns 1 : Introduce Muhammad Hanif Sudibyo
 with col1:

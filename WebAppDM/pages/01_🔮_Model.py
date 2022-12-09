@@ -1,7 +1,5 @@
 import streamlit as st
 import numpy as np
-import tensorflow as tf
-import cv2
 from tensorflow import keras
 from keras.utils import load_img, img_to_array
 from keras.applications.inception_v3 import preprocess_input
@@ -9,8 +7,8 @@ from PIL import Image
 
 # SET PAGE
 # emojis: https://www.webfx.com/tools/emoji-cheat-sheet/
-pageicon = Image.open("aset_batik_icon.png")
-st.set_page_config(page_title="Bata Baca Web App", page_icon=pageicon, layout="centered")
+pageicon = Image.open("./assets/FashioniFy.png")
+st.set_page_config(page_title="Fashionify Web App", page_icon=pageicon, layout="centered")
 
 # SET TITLE
 st.markdown("<h1 style='text-align: center;'>Prediksi Kategori Pakaian Disini</h1>", unsafe_allow_html=True)
@@ -69,7 +67,7 @@ st.markdown("""
 @st.experimental_singleton # Decorator to cache non-data objects
 def InceptionV3():
     # Load large model
-    model = keras.models.load_model('best_model NEW.h5')
+    model = keras.models.load_model('model_inception.h5')
     return model
 
 # Model is now cached
