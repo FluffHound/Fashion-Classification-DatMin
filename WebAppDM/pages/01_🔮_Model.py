@@ -67,7 +67,7 @@ st.markdown("""
 @st.experimental_singleton # Decorator to cache non-data objects
 def InceptionV3():
     # Load large model
-    model = keras.models.load_model('model_inception.h5')
+    model = keras.models.load_model('./WebAppDM/model_inception.h5')
     return model
 
 # Model is now cached
